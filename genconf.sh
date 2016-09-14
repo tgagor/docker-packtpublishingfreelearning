@@ -1,14 +1,14 @@
 #!/bin/bash
-mkdir -p "$DOWNLOAD_FOLDER"
+mkdir -p "$PPFL_DOWNLOAD_FOLDER"
 
 cat > /opt/ppfl/configFile.cfg <<EOF
 [LOGIN_DATA]
-email=$EMAIL
-password=$PASSWORD
+email=$PPFL_EMAIL
+password=$PPFL_PASSWORD
 
 [DOWNLOAD_DATA]
-downloadFolderPath: $DOWNLOAD_FOLDER
-downloadFormats: $DOWNLOAD_FORMATS
+downloadFolderPath: $PPFL_DOWNLOAD_FOLDER
+downloadFormats: $PPFL_DOWNLOAD_FORMATS
 EOF
 
 exec "$@"
