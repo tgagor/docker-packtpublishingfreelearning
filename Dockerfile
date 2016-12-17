@@ -6,7 +6,8 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV PPFL_EMAIL=youremail \
     PPFL_PASSWORD=yourpassword \
     PPFL_DOWNLOAD_FOLDER=/books \
-    PPFL_DOWNLOAD_FORMATS="pdf, epub, mobi, code"
+    PPFL_DOWNLOAD_FORMATS="pdf, epub, mobi, code" \
+    PPFL_EXTRAINFOLOGFILEPATH="eBookMetadata.log"
 
 # run it as unprivileged user
 RUN groupadd -g 1000 ppfl \
