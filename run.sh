@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 mkdir -p "$PPFL_DOWNLOAD_FOLDER"
 
 cat > /opt/ppfl/configFile.cfg <<EOF
