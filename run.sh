@@ -7,9 +7,9 @@ email=$PPFL_EMAIL
 password=$PPFL_PASSWORD
 
 [DOWNLOAD_DATA]
-downloadFolderPath: $PPFL_DOWNLOAD_FOLDER
-downloadFormats: $PPFL_DOWNLOAD_FORMATS
-ebookExtraInfoLogFilePath: $PPFL_EXTRAINFOLOGFILEPATH
+download_folder_path: $PPFL_DOWNLOAD_FOLDER
+download_formats: $PPFL_DOWNLOAD_FORMATS
+ebook_extra_info_log_file_path: $PPFL_EXTRAINFOLOGFILEPATH
 EOF
 
 exec "$@"
