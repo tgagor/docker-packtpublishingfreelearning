@@ -7,7 +7,8 @@ ENV PPFL_EMAIL=youremail \
     PPFL_PASSWORD=yourpassword \
     PPFL_DOWNLOAD_FOLDER=/books \
     PPFL_DOWNLOAD_FORMATS="pdf, epub, mobi, code" \
-    PPFL_EXTRAINFOLOGFILEPATH="eBookMetadata.log"
+    PPFL_EXTRAINFOLOGFILEPATH="eBookMetadata.log" \
+    PPFL_ANTICAPTCHA_DATA="xxx"
 
 # run it as unprivileged user
 RUN addgroup -g 1000 ppfl \
