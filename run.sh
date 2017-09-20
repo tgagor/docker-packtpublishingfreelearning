@@ -12,4 +12,11 @@ download_formats: $PPFL_DOWNLOAD_FORMATS
 ebook_extra_info_log_file_path: $PPFL_EXTRAINFOLOGFILEPATH
 EOF
 
+if [ -n "$PPFL_ANTICAPTCHA_DATA" ]; then
+cat >> /opt/ppfl/configFile.cfg <<EOF
+[ANTICAPTCHA_DATA]
+key: $PPFL_ANTICAPTCHA_DATA
+EOF
+fi
+
 exec "$@"
